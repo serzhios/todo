@@ -18,21 +18,6 @@ function App(){
   // const [checked, setChecked] = useState(true)
   
 
-  
-//   useEffect(() => {
-//     const data = JSON.parse(localStorage.getItem('mu-local'))
-//     if(data) {
-//       setTodos(data)
-//     }
-// }, []);
-
-//  useEffect(() => {
-//   localStorage.setItem('mu-local', JSON.stringify(todos))   
-//  }, [todos]);
-  // function handleChange(e) {
-
-  //  setChecked(!checked)
-  // }
 
   const addTask = (value) => {
 if(value) {
@@ -60,14 +45,6 @@ setTodos([...todos.filter((todo) =>todo.id !== id)])
     setTodos([...todos].splice(index,0))
   }
 
-  // const btnAsk = (handleToggle) => {
-  //   if(!handleToggle) {
-  //     <button
-  //     className= 'btn-delete'>delete all
-  //     </button>
-  //     }
-      
-  // }
   
 
   const handleToggle  = (id) => {
@@ -75,21 +52,7 @@ setTodos([...todos.filter((todo) =>todo.id !== id)])
   task.id == id ? {...task, complete: !task.complete} : {...task})])
   }
 
-  // const list =  todos.map((todo) =>{ 
-  //   return (<>
-
-  //     <TodoItem
-  //     todo={todo}
-      
-  //     key={todo.id}
-  //     toggleTask={handleToggle }
-  //     removeTask={removeTask}
-  //   />
-   
-  //   </>
- 
-  // )
-  // })
+  
 
 
 const list =   todos.map((todo) =>{ 
@@ -134,20 +97,11 @@ const list =   todos.map((todo) =>{
   <button 
 onClick={deleteTask}
  className= {{setTodos}  ? 'btn-delete' : 'none'}
-//  className= 'btn-delete'
+
   >delete all
  </button>
 
- {/* <button 
-//  btnAst={btnAst}
-//  addTask={addTask}
-//  disabled='null'
-onClick={deleteTask}
- className= 'btn-delete'
- style={addItem}
-//  style= {!{addTask} ? {block} : {none}}
- >delete all
- </button> */}
+ 
       </div>
 }
 

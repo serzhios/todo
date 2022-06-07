@@ -1,3 +1,8 @@
+html {
+    display: flex;
+    justify-content: center;
+}
+
 .root {
     text-align: center;
 }
@@ -11,9 +16,17 @@
 }
 
 .App {
+    /*height: 450px;
+    */
+    width: 500px;
     text-align: center;
-    /* border: 4px solid black; */
-    /* background: rgb(179, 170, 170); */
+    border: 4px solid rgb(238, 224, 224);
+    background: rgb(179, 170, 170);
+    border-radius: 22px;
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    -ms-border-radius: 22px;
+    -o-border-radius: 22px;
 }
 
 .App .item-input {
